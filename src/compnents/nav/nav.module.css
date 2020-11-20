@@ -1,0 +1,38 @@
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+}
+
+.logo{
+    margin-left: 50px;
+    color: #fff;
+}
+
+.nav_link{
+    margin-left: auto;
+}
+
+.nav_link li{
+    display: inline;
+    margin-right: 25px;
+}
+
+.nav_link li:hover a{
+    color: #fff;
+}
+
+.localization{
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.search{
+    margin-right: 50px;
+}
