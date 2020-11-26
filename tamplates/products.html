@@ -5,36 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./products.css">
+    <link rel="stylesheet" href="./base.css">
 </head>
 
 <body>
-<<<<<<< HEAD
     <nav>
-        <a href="" class="logo"><img src="./images/logo-w.png" alt="logo"></a>
+        <a href="index.html" class="logo"><img src="./images/logo-w.png" alt="logo"></a>
         <div class="menu_btn"><span></span></div>
         <div class="menu_container">
             <div class="menu">
-                <ul class="menu-list">
-                    <li class="menu_item"><a href="./index.html">Главная</a></li>
-                    <li class="menu_item"><a href="./products.html">Продукция</a></li>
-                    <li class="menu_item"><a href="./about_tech.html">Страница технолога</a></li>
-                    <li class="menu_item"><a href="./about.html">О компании</a></li>
-                    <li class="menu_item"><a href="./news.html">Новости</a></li>
-                    <li class="menu_item"><a href="./contact.html">Контакты</a></li>
-                </ul>
+                <a href="./index.html">Главная</a>
+                <a href="./products.html">Продукция</a>
+                <a href="./about_tech.html">Страница технолога</a>
+                <a href="./about.html">О компании</a>
+                <a href="./news.html">Новости</a>
+                <a href="./contact.html">Контакты</a>
             </div>
-            <a href="#" class="search_btn"></a>
-            <a href="#" class="lang_btn"></a>
         </div>
     </nav>
     <header>
-        <div class="container">
-            <div class="header_content">
-                <h2 class="">Products</h2>
-                <img class="header_img" src="./images/0_120ee5_fbde49b4_orig.jpg" alt="">
-            </div>
-        </div>
+        <h1>Продукция</h1>
+        <img src="./images/green-for-mainpage.jpg" alt="">
     </header>
     <div class="products_container">
 
@@ -99,25 +90,50 @@
         </div>
         <div class="product_card">
             <div class="img_container"><img src="./images/image--022.png" alt=""></div>
-=======
-    <nav></nav>
-    <header></header>
-    <div class="products_container">
-        <div class="product_card">
-            <div>image</div>
-            <h4>name of product</h4>
-        </div>
-        <div class="product_card">
-            <div>image</div>
-            <h4>name of product</h4>
-        </div>
-        <div class="product_card">
-            <div>image</div>
->>>>>>> afa5f2b6fd0fe50417696f0aa35c0b12ec80ae7a
             <h4>name of product</h4>
         </div>
     </div>
-    <footer></footer>
+    <section class="feedback_section">
+        <h2 class="">Форма связи</h2>
+        <form action="" class="feedback_form">
+            <div class="feedback_data">
+                <input type="text" name="name" id="name" placeholder="Ваше имя (обязательно)">
+                <input type="email" name="email" id="email" placeholder="Email (обязательно)">
+                <input type="tel" name="tel" id="tel" placeholder="Ваши контакты">
+            </div>
+            <textarea name="textarea" id="textarea" placeholder="some text here"></textarea>
+        </form>
+        <a href="" class="feedback_btn">Отправить</a>
+    </section>
+    <footer>
+        <div class="container">
+            <ul class="footer_list">
+                <li class="footer_list-item">
+                    <h3>Адрес</h3>
+                    <span>Кыргызская Республика, г. Бишкек, ул. Гражданская 53, офис 307</span>
+                </li>
+                <li class="footer_list-item">
+                    <h3>Email</h3>
+                    <span>onesta_group@mail.ru</span>
+                </li>
+                <li class="footer_list-item">
+                    <h3>Контактные номера</h3>
+                    <a href="#">+996 (550) 217 110</a>
+                    <a href="#">+996 (702) 217 110</a>
+                    <a href="#">+996 (777) 217 110</a>
+                </li>
+                <li class="footer_list-item">
+                    <h3>Социальные сети</h3>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </li>
+            </ul>
+            <div class="footer_policy">
+                <span>2010-2020</span><span>Все права защищены</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>

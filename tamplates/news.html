@@ -4,73 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./news.css">
+    <link rel="stylesheet" href="./base.css">
 </head>
 <body>
     <nav>
-        <a href="" class="logo"><img src="./images/logo-w.png" alt="logo"></a>
+        <a href="index.html" class="logo"><img src="./images/logo-w.png" alt="logo"></a>
         <div class="menu_btn"><span></span></div>
         <div class="menu_container">
             <div class="menu">
-                <ul class="menu-list">
-                    <li class="menu_item"><a href="./index.html">Главная</a></li>
-                    <li class="menu_item"><a href="./products.html">Продукция</a></li>
-                    <li class="menu_item"><a href="./about_tech.html">Страница технолога</a></li>
-                    <li class="menu_item"><a href="./about.html">О компании</a></li>
-                    <li class="menu_item"><a href="./news.html">Новости</a></li>
-                    <li class="menu_item"><a href="./contact.html">Контакты</a></li>
-                </ul>
+                <a href="./index.html">Главная</a>
+                <a href="./products.html">Продукция</a>
+                <a href="./about_tech.html">Страница технолога</a>
+                <a href="./about.html">О компании</a>
+                <a href="./news.html">Новости</a>
+                <a href="./contact.html">Контакты</a>
             </div>
-            <a href="#" class="search_btn"></a>
-            <a href="#" class="lang_btn"></a>
         </div>
     </nav>
-<<<<<<< HEAD
     <header>
-        <div class="container">
-            <div class="header_content">
-                <h2 class="">Заголовок</h2>
-                <img class="header_img" src="./images/0_120ee5_fbde49b4_orig.jpg" alt="">
-            </div>
-        </div>
+        <h1>Новости</h1>
+        <img src="./images/green-for-mainpage.jpg" alt="">
     </header>
     <div class="news_container">
-        <div class="news_item">
-            <div class="img_container">
-                <img src="./images/altri-prodotti-altri-coagulanti-genetico-uai-720x720.jpg" alt="">
-            </div>
-            <div class="text_container">
-                <h4>title of news</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quas adipisci delectus atque
-                    quisquam nobis accusamus voluptas ad tempora ipsum explicabo non, earum mollitia quae officiis
-                    provident numquam qui cumque.</p>
-                <a href="./news_item.html">more</a>
-            </div>
-        </div>
-        <div class="news_item">
-            <div class="img_container">
-                <img src="./images/altri-prodotti-altri-coagulanti-genetico-uai-720x720.jpg" alt="">
-            </div>
-            <div class="text_container">
-                <h4>title of news</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quas adipisci delectus atque
-                    quisquam nobis accusamus voluptas ad tempora ipsum explicabo non, earum mollitia quae officiis
-                    provident numquam qui cumque.</p>
-                <a href="">more</a>
-            </div>
-        </div>
-        <div class="news_item">
-            <div class="img_container">
-                <img src="./images/altri-prodotti-altri-coagulanti-genetico-uai-720x720.jpg" alt="">
-            </div>
-            <div class="text_container">
-                <h4>title of news</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quas adipisci delectus atque
-                    quisquam nobis accusamus voluptas ad tempora ipsum explicabo non, earum mollitia quae officiis
-                    provident numquam qui cumque.</p>
-                <a href="">more</a>
-            </div>
-        </div>
         <div class="news_item">
             <div class="img_container">
                 <img src="./images/altri-prodotti-altri-coagulanti-genetico-uai-720x720.jpg" alt="">
@@ -144,27 +99,46 @@
             </div>
         </div>
     </div>
-=======
-    <header></header>
-        <div class="news_container">
-            <div class="news_card">
-                <div class="news_img">img</div>
-                <div class="news_info">
-                    <h4>Заголовок новости</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim fugit, totam, ullam labore harum nihil, maxime necessitatibus voluptatem id obcaecati. Est omnis veritatis reprehenderit rem quasi qui, magnam quibusdam?</p>
-                </div>
-                <button>Подробнее</button>
+    <section class="feedback_section">
+        <h2 class="">Форма связи</h2>
+        <form action="" class="feedback_form">
+            <div class="feedback_data">
+                <input type="text" name="name" id="name" placeholder="Ваше имя (обязательно)">
+                <input type="email" name="email" id="email" placeholder="Email (обязательно)">
+                <input type="tel" name="tel" id="tel" placeholder="Ваши контакты">
             </div>
-            <div class="news_card">
-                <div class="news_img">img</div>
-                <div class="news_info">
-                    <h4>Заголовок новости</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim fugit, totam, ullam labore harum nihil, maxime necessitatibus voluptatem id obcaecati. Est omnis veritatis reprehenderit rem quasi qui, magnam quibusdam?</p>
-                </div>
-                <button>Подробнее</button>
+            <textarea name="textarea" id="textarea" placeholder="some text here"></textarea>
+        </form>
+        <a href="" class="feedback_btn">Отправить</a>
+    </section>
+    <footer>
+        <div class="container">
+            <ul class="footer_list">
+                <li class="footer_list-item">
+                    <h3>Адрес</h3>
+                    <span>Кыргызская Республика, г. Бишкек, ул. Гражданская 53, офис 307</span>
+                </li>
+                <li class="footer_list-item">
+                    <h3>Email</h3>
+                    <span>onesta_group@mail.ru</span>
+                </li>
+                <li class="footer_list-item">
+                    <h3>Контактные номера</h3>
+                    <a href="#">+996 (550) 217 110</a>
+                    <a href="#">+996 (702) 217 110</a>
+                    <a href="#">+996 (777) 217 110</a>
+                </li>
+                <li class="footer_list-item">
+                    <h3>Социальные сети</h3>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </li>
+            </ul>
+            <div class="footer_policy">
+                <span>2010-2020</span><span>Все права защищены</span>
             </div>
         </div>
->>>>>>> afa5f2b6fd0fe50417696f0aa35c0b12ec80ae7a
-    <footer></footer>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

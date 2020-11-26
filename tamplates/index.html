@@ -12,58 +12,62 @@
 
 <body>
     <nav>
-        <a href="" class="logo"><img src="./images/logo-w.png" alt="logo"></a>
+        <a href="index.html" class="logo"><img src="./images/logo-w.png" alt="logo"></a>
         <div class="menu_btn"><span></span></div>
         <div class="menu_container">
             <div class="menu">
-                <ul class="menu-list">
-                    <li class="menu_item"><a href="./index.html">Главная</a></li>
-                    <li class="menu_item"><a href="./products.html">Продукция</a></li>
-                    <li class="menu_item"><a href="./about_tech.html">Страница технолога</a></li>
-                    <li class="menu_item"><a href="./about.html">О компании</a></li>
-                    <li class="menu_item"><a href="./news.html">Новости</a></li>
-                    <li class="menu_item"><a href="./contact.html">Контакты</a></li>
-                </ul>
+                <a href="./index.html">Главная</a>
+                <a href="./products.html">Продукция</a>
+                <a href="./about_tech.html">Страница технолога</a>
+                <a href="./about.html">О компании</a>
+                <a href="./news.html">Новости</a>
+                <a href="./contact.html">Контакты</a>
             </div>
-            <a href="#" class="search_btn"><input type="search"></a>
-            <a href="#" class="lang_btn">KG</a>
         </div>
     </nav>
     <header>
-        <h2>Onesta Group</h2>
-        <img src="./images/0_120ee5_fbde49b4_orig.jpg" alt="">
+        <h1>Onesta Group</h1>
+        <img src="./images/green-for-mainpage.jpg" alt="">
     </header>
     <section class="projects_section">
-        <h2>Other companies</h2>
+        <h2>Другие компании</h2>
         <div class="project_items">
             <a href="" class="project_item">
-                <div class="img_container">
-                    <img src="./images/image--018.png" alt="">
-                </div>
                 <div class="text_container">
                     <h4>Name of company</h4>
+                </div>
+                <div class="img_container">
+                    <img src="./images/altri-prodotti-altri-coagulanti-genetico-uai-720x720.jpg" alt="">
                 </div>
             </a>
             <a href="" class="project_item">
-                <div class="img_container">
-                    <img src="./images/image--019.png" alt="">
-                </div>
                 <div class="text_container">
                     <h4>Name of company</h4>
+                </div>
+                <div class="img_container">
+                    <img src="./images/altri-prodotti-lipasi-lipasi-di-capretto-uai-720x720.jpg" alt="">
                 </div>
             </a>
             <a href="" class="project_item">
-                <div class="img_container">
-                    <img src="./images/image--020.png" alt="">
-                </div>
                 <div class="text_container">
                     <h4>Name of company</h4>
+                </div>
+                <div class="img_container">
+                    <img src="./images/altri-prodotti-lipasi-lipasi-di-vitello-uai-720x720.jpg" alt="">
+                </div>
+            </a>
+            <a href="" class="project_item">
+                <div class="text_container">
+                    <h4>Name of company</h4>
+                </div>
+                <div class="img_container">
+                    <div class="plus">+</div>
                 </div>
             </a>
         </div>
     </section>
     <section class="about_section">
-        <h2>About us</h2>
+        <h2>О нас</h2>
         <div class="about_container">
             <div class="text_container">
                 <h4>Мы рады видеть вас!</h4>
@@ -268,7 +272,7 @@
                 <input type="email" name="email" id="email" placeholder="Email (обязательно)">
                 <input type="tel" name="tel" id="tel" placeholder="Ваши контакты">
             </div>
-            <textarea name="textarea" id="textarea"></textarea>
+            <textarea name="textarea" id="textarea" placeholder="some text here"></textarea>
         </form>
         <a href="" class="feedback_btn">Отправить</a>
     </section>
@@ -320,6 +324,8 @@
         new Glide(".glide", config).mount()
         new Glide(".glide_feedback", config_feedback).mount()
     </script>
+
+    <script src="./script.js"></script>
 
 </body>
 
