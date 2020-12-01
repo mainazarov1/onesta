@@ -1,6 +1,8 @@
 import React from 'react';
 import st from './header.module.css';
 import {useLocation} from 'react-router-dom';
+import milk from './image/milk1.jpg';
+import greenForMain from './image/green-for-mainpage.jpg'
 
 const Header = () =>{
     let location = useLocation().pathname;
@@ -39,22 +41,44 @@ const Header = () =>{
     return(
         <div className={st.header}>
             {
-                location === '/about' && <h1>About</h1>
+                location === '/about' && <header className={st.about}>
+                    <div className={st.about_header}>
+                        <h1>Onesta group</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis perferendis, iure tenetur amet.</p>
+                        <button className={st.header_button}>Связаться</button>
+                    </div>
+                    <img src={milk} alt='img'></img>
+                    </header>
             }
             {
-                location === '/' && <h1>Onesta Group</h1>
+                location === '/' && <header>
+                <h1>Onesta Group</h1>
+                <img src={greenForMain} alt='img'></img>
+                </header>
             }
             {
-                location === '/products' && <h1>products</h1>
+                location === '/products' && <header>
+                <h1>Products</h1>
+                <img src={greenForMain} alt='img'></img>
+                </header>
             }
             {
-                location === '/tehnolog' && <h1>tehnolog</h1>
+                location === '/tehnolog' && <header>
+                <h1>Tehnolog Page</h1>
+                <img src={greenForMain} alt='img'></img>
+                </header>
             }
             {
-                location === '/news' && <h1>news</h1>
+                location === '/news' && <header>
+                <h1>News</h1>
+                <img src={greenForMain} alt='img'></img>
+                </header>
             }
             {
-                location === '/contacts' && <h1>contacts</h1>
+                location === '/contacts' && <header>
+                <h1>Contacts</h1>
+                <img src={greenForMain} alt='img'></img>
+                </header>
             }
             {
                 // location.match('/product/') && title && <h1 className="title_intro">{title.innerHTML}</h1>

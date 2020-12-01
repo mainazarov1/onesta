@@ -1,4 +1,4 @@
-import React, {useLayoutEffect} from 'react';
+import React from 'react';
 import {useParams} from 'react-router';
 import Query from '../query/query';
 import BLOG_CARD_QUERY from '../queries/blog/blogCard';

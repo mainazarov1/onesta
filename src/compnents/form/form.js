@@ -5,26 +5,19 @@ import st from './form.module.css';
 const Form = () =>{
      
     return(
-        <section className={st.form}>
-            <form>
-                <h2>Форма обратной связи</h2>
-                <input placeholder="Ваше имя (обязательно)"/>
-                <input placeholder="Email (обязательно)"/>
-                <input placeholder="Тема"/>
-                <textarea placeholder="Сообщение"/>
-                <button>Отправить</button>
-            </form>
-            <div className={st.contacts}>
-                <span>Адрес</span>
-                <span>ул. Гражданская</span>
-                <span>Почта</span>
-                <span>onesta_group@mail.ru</span>
-                <span>Контактные номера</span>
-                <span>+996 (777) 217 110</span>
-                <span>+996 (777) 217 110</span>
-                <span>+996 (777) 217 110</span>
+        <div className={st.form}>
+            <h2>Форма обратной связи</h2>
+            <div className={st.feedback}>
+                <div className={st.feedback_img}></div>
+                <form>
+                    <input placeholder="name"></input>
+                    <input placeholder="email"></input>
+                    <label></label>
+                    <textarea placeholder="message"></textarea>
+                    <button>Send</button>
+                </form>
             </div>
-        </section>
+        </div>
     )
 }
 
