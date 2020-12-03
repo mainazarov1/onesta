@@ -4,6 +4,7 @@ import Query from '../query/query';
 import CATEGORY_CARD_QUERY from '../queries/category/categoryCard';
 import {Link} from 'react-router-dom';
 import CATEGORY_QUERY from '../queries/category/category';
+import st from './category.module.css';
 
 const CategoryCard = () =>{
     let { id } = useParams();
@@ -18,11 +19,9 @@ const CategoryCard = () =>{
                         return(
                             <ul className="glide__slides">
                             {categories && categories.map(elem =>(
-                                <li class="glide__slide">
                                 <Link to={`/category/${elem.id}`}  key={elem.id} className='card'>
-                                    <h3>{elem.name}</h3>
+                                    {id === elem.id ? <h3 className={st.active_category}>{elem.name}</h3> : <h3>{elem.name}</h3>}
                                 </Link>
-                                </li>
                             ))}
                             </ul>
                         )
@@ -34,13 +33,11 @@ const CategoryCard = () =>{
                     return(
                         <div>
                             {category.blogs && category.blogs.map(elem =>(
-                                <li class="glide__slide">
-                                <Link to={`/product/${elem.id}`}  key={elem.id} className='card'>
+                                <Link to={`/product/${elem.id}`} className='card' key={elem.id}>
                                     <h3>{elem.name}</h3>
                                     <p>{elem.description}</p>
                                     <img src={'http://localhost:1337' + elem.img.url} alt="img"></img>
                                 </Link>
-                                </li>
                             ))}
                         </div>
                     )

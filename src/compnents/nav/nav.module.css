@@ -4,32 +4,32 @@
     left: 0;
     z-index: 7;
     width: 100%;
-    height: 70px;
+    padding: 20px;
     display: flex;
     align-items: center;
-    padding: 0px 20px;
     transition: ease-out 0.3s;
+}
+
+.logo{
+    color: #fff;
 }
 
 .menu{
     margin-left: auto;
 }
 
-.nav_bg{
-    background: black;
-}
-
-.nav .menu a{
+.menu a{
     position: relative;
-    margin-left: 20px;
+    margin-left: 15px;
     color: white;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .nav .menu a:after{
     content: '';
     position: absolute;
-    bottom: -1px;
+    bottom: -4px;
     left: 0;
     width: 100%;
     height: 1px;
@@ -43,20 +43,71 @@
     transform: scaleX(1);
 }
 
-
-.logo{
-    margin-left: 50px;
-    color: #fff;
-}
-
-
-.localization{
-    margin-left: 50px;
-    margin-right: 25px;
-    color: #fff;
-}
-
-.search{
-    margin-right: 50px;
-    color: #fff;
+@media screen and (max-width: 900px){
+    .menu_active,
+    .menu{
+        margin-left: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 20px; 
+        z-index: -1;
+        transform: translateX(100%);
+        transition: ease-out 0.3s;
+    }
+    .menu_active{
+        transform: translateX(0%);
+    }
+    .menu_active a{
+        margin-left: 0px;
+        margin-top: 5px;
+        font-size: 25px;
+        color: white;
+    }
+    .menu_btn_active,
+    .menu_btn{
+        height: 40px;
+        width: 40px;
+        border: 1px solid white;
+        margin-left: auto;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu_btn_active span,
+    .menu_btn span{
+        height: 2px;
+        width: 30px;
+        background: transparent;
+    }
+    .menu_btn_active span::after,
+    .menu_btn_active span::before,
+    .menu_btn span::after,
+    .menu_btn span::before{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 30px;
+        background: white;
+        transform: translateY(-5px);
+        transition: ease-out 0.3s;
+    }
+    .menu_btn_active span::after{
+        transform: translateY(0) rotate(40deg);
+    }
+    .menu_btn_active span::before{
+        transform: translateY(0) rotate(-40deg);
+    }
+    .menu_btn_active::after,
+    .menu_btn span::after{
+        transform: translateY(5px);
+    }
 }

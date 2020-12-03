@@ -19,13 +19,13 @@ const About = () =>{
                     </div>
                     <img src={milk} alt="img"></img>
                 </div>
-                <div class={st.services_card}>
+                <div className={st.services_card}>
                     <div>
                         <h4>Консультация</h4>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                 </div>
-                <div class={st.services_card}>
+                <div className={st.services_card}>
                     <div>
                         <h4>Доступность</h4>
                         <p>Мы предлагаем лучшее соотношение цены и качества.</p>
