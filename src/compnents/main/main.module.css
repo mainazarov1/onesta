@@ -97,3 +97,29 @@
 .project_item:hover .plus{
     transform: rotate(180deg);
 }
+
+
+.news_item{
+    border: 2px solid #f7f7f7;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.news_item .img_container{
+    height: 100px;
+    margin-right: 20px;
+}
+
+.news_item .img_container img{
+    height: 100%;
+}
+
+.news_item .text_container h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.news_item .text_container a{
+    color: var(--index1);
+}
+

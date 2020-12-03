@@ -49,3 +49,46 @@ h2{
 input, textarea, button{
   outline: none;
 }
+
+.glide__slide{
+  padding: 20px;
+}
+
+.glide__slide .img_container{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vw;
+}
+
+.glide__slide:hover .img_container img{
+  transform: scale(1.1);
+}
+
+.glide__slide .img_container img{
+  width: 70%;
+  transition:  ease-out 0.3s;
+}
+
+.glide__slide .text_container{
+  margin-top: 20px;
+}
+
+.glide__slide .text_container h4{
+  font-size: 20px;
+}
+
+.glide__slide .text_container p{
+  color: gray;
+  margin-top: 10px;
+}
+
+.glide__slide .text_container a{
+  margin-top: 30px;
+  display: inline-block;
+  background: black;
+  color: var(--index1);
+  padding: 15px 30px;
+  border-radius: 30px;
+}

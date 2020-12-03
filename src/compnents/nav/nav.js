@@ -27,7 +27,7 @@ const Nav = () => {
                 <Link to='/' className={st.logo}>Onesta Group</Link>
                 <ul className={st.menu}>
                     <Link to='/'>Главная</Link>
-                    <Link to='/products'>Продукция</Link>
+                    <Link to='/categories'>Продукция</Link>
                     <Link to='/tehnolog'>Страница Технолога</Link>
                     <Link to='/about'>О компании</Link>
                     <Link to='/news'>Новости</Link>

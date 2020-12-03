@@ -63,6 +63,12 @@ const Header = () =>{
                 </header>
             }
             {
+                location === '/categories' && <header>
+                <h1>Products</h1>
+                <img src={greenForMain} alt='img'></img>
+                </header>
+            }
+            {
                 location === '/tehnolog' && <header>
                 <h1>Tehnolog Page</h1>
                 <img src={greenForMain} alt='img'></img>
@@ -81,7 +87,10 @@ const Header = () =>{
                 </header>
             }
             {
-                // location.match('/product/') && title && <h1 className="title_intro">{title.innerHTML}</h1>
+                location.match('/category/') && <header>
+                <h1>Products</h1>
+                <img src={greenForMain} alt='img'></img>
+                </header>
             }
         </div>
     )

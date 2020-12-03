@@ -13,6 +13,8 @@ import Tehnolog from './compnents/tehnolog/tehnolog';
 import Main from './compnents/main/main';
 import NewsCard from './compnents/news/newsCard';
 import ScrollToTop from './compnents/scrollToTop/scrollToTop';
+import Categories from './compnents/categories/categories';
+import CategoryCard from './compnents/categories/categoriesCard';
 
 function App() {
 
@@ -35,12 +37,14 @@ function App() {
           <Switch>
             <Route path="/" component={Main} exact />
             <Route path='/product/:id' component={ProductCard} />
+            <Route path='/category/:id' component={CategoryCard} />
             <Route path="/products" component={Products} />
             <Route path="/about" component={About} />
             <Route path="/news" component={News} />
             <Route path='/news/:id' component={NewsCard} />
             <Route path="/contacts" component={Contacts} />
             <Route path="/tehnolog" component={Tehnolog} />
+            <Route path='/categories' component={Categories} />
           </Switch>
           <Form />
           <Footer />

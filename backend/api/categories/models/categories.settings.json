@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "blogs",
+  "collectionName": "categories",
   "info": {
-    "name": "blog",
+    "name": "categories",
     "description": ""
   },
   "options": {
@@ -14,23 +14,20 @@
     "name": {
       "type": "string"
     },
-    "description": {
-      "type": "text"
+    "blogs": {
+      "collection": "blog",
+      "via": "category"
     },
-    "img": {
+    "photo": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
         "images",
+        "files",
         "videos"
       ],
       "plugin": "upload",
       "required": false
-    },
-    "category": {
-      "via": "blogs",
-      "model": "categories"
     }
   }
 }

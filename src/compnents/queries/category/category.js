@@ -1,10 +1,13 @@
 import gql from 'graphql-tag';
 
 const CATEGORY_QUERY = gql`
-    query Products {
-        products{
+    query Categories {
+        categories{
             id
             name
+            photo{
+                url
+            }
           }
     }
 `
