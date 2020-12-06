@@ -15,8 +15,8 @@
       "type": "string"
     },
     "blogs": {
-      "collection": "blog",
-      "via": "category"
+      "via": "category",
+      "collection": "blog"
     },
     "photo": {
       "model": "file",

@@ -4,6 +4,9 @@ body {
   --index: #1b763b;
   --index1: #f5821f;
   --index2: #217E29;
+  --index3: #d1d2d4;
+  --index4: #77787b;
+  
 }
 
 *{
@@ -29,18 +32,16 @@ a{
 }
 
 section{
-  /* border: 10px solid #000; */
-  min-height: 100vh;
-  text-align: center;
+  padding: 10px;
+  margin: 10px 0px;
 }
 
 h2{
-  font-size: 40px;
+  font-size: 20px;
+  font-weight: 900;
   text-transform: uppercase;
-  font-weight: 200;
-  margin: 30px 0px;
   text-align: center;
-  color: #cacaca;
+  color: var(--index);
 }
 
 input, textarea, button{
@@ -51,3 +52,32 @@ input, textarea, button{
 .hide_card{
   display: none;
 }
+
+.header_about{
+  background: #f5cdbc;
+}
+.header_categories{
+  background:#bce6f5;
+}
+.header_tehnolog{
+  background: #bcf5cf;
+}
+.header_news{
+  background:#bcf5eb;
+}
+
+.header_contacts{
+  background: #f5bcc6;
+}
+
+
+
+
+
+
+
+
+
+
+
+

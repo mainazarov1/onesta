@@ -6,6 +6,7 @@ const BLOG_CARD_QUERIES = gql`
             id
             name
             description
+            info
             img{
                 url
             }

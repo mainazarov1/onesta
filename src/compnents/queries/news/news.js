@@ -6,6 +6,8 @@ const NEWS_QUERY = gql`
             id
             name
             description
+            info
+            data
             img{
                 url
             }

@@ -27,6 +27,12 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "data": {
+      "type": "date"
+    },
+    "info": {
+      "type": "string"
     }
   }
 }

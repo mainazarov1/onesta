@@ -2,27 +2,45 @@ header{
     z-index: 6;
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
+    background: var(--index3);
+    min-height: 45vh;
     display: flex;
-    align-items: center;
-    background: #000;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 15%;
+    padding-top: 130px;
 }
 
 header h1{
     position: relative;
     z-index: 1;
-    color: white;
-    width: 100%;
-    font-weight: 400;
-    font-size: 40px;
-    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
 }
+
+header h1::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 3px;
+    width: 30px;
+    background: var(--index);
+}
+
+header p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
 
 header img{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     left: 0;
+    bottom: 0%;
     width: 100%;
-    opacity: 0.8;
+    z-index: -1;
 }
+
+
+

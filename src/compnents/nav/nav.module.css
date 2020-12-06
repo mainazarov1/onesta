@@ -11,7 +11,8 @@
 }
 
 .logo{
-    color: #fff;
+    color: var(--index2);
+    font-weight: 700;
 }
 
 .menu{
@@ -21,8 +22,8 @@
 .menu a{
     position: relative;
     margin-left: 15px;
-    color: white;
-    font-size: 15px;
+    color: #77787b;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -33,7 +34,7 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background: white;
+    background: #77787b;
     transform: scaleX(0);
     transform-origin: left;
     transition: ease-out 0.3s;
@@ -52,7 +53,7 @@
         left: 0;
         height: 100vh;
         width: 100vw;
-        background: black;
+        background: var(--index3);
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -69,7 +70,6 @@
         margin-left: 0px;
         margin-top: 5px;
         font-size: 25px;
-        color: white;
     }
     .menu_btn_active,
     .menu_btn{

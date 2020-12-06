@@ -1,11 +1,10 @@
 import React, { useState} from 'react';
 import Nav from './compnents/nav/nav';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import ProductCard from './compnents/products/productCard';
+import Product from './compnents/products/product';
 import Header from './compnents/header/header';
 import Form from './compnents/form/form';
 import Footer from './compnents/footer/footer';
-import Products from './compnents/products/products';
 import About from './compnents/about/about';
 import News from './compnents/news/news';
 import Contacts from './compnents/contacts/contacts';
@@ -36,18 +35,17 @@ function App() {
           <Header />
           <Switch>
             <Route path="/" component={Main} exact />
-            <Route path='/product/:id' component={ProductCard} />
+            <Route path='/product/:id' component={Product} />
             <Route path='/category/:id' component={CategoryCard} />
-            <Route path="/products" component={Products} />
             <Route path="/about" component={About} />
-            <Route path="/news" component={News} />
+            <Route exact path="/news" component={News} />
             <Route path='/news/:id' component={NewsCard} />
             <Route path="/contacts" component={Contacts} />
             <Route path="/tehnolog" component={Tehnolog} />
             <Route path='/categories' component={Categories} />
           </Switch>
-          {/* <Form />
-          <Footer /> */}
+          <Form />
+          <Footer />
         </div>
       </ScrollToTop>
     </BrowserRouter>

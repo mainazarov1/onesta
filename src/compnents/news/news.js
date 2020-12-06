@@ -6,7 +6,6 @@ const News = () =>{
 
     return(
         <div>
-            news page
             <NewsList />
         </div>
     )

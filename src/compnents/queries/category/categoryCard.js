@@ -8,6 +8,7 @@ const CATEGORY_CARD_QUERY = gql`
                 id
                 name
                 description
+                info
                 img{
                     url
                 }

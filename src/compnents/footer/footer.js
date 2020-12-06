@@ -1,29 +1,31 @@
 import React from 'react';
 import st from './footer.module.css';
-import facebook from '../../content/facebook.png';
-import twitter from '../../content/twitter.png'
 
-const Footer = () =>{
+const Footer = () => {
 
-    return(
-        <footer>
-            <ul className={st.contact_number}>
-                <span className={st.title}>Контактные номера</span>
-                <li><a href="http://google.com">0 (550) 217 110</a></li>
-                <li><a href="http://google.com">0 (550) 217 110</a></li>
-                <li><a href="http://google.com">0 (550) 217 110</a></li>
+    return (
+        <footer className={st.footer}>
+            <ul>
+                <h4>address</h4>
+                <li><a href="test">Кыргызская Республика, г. Бишкек, ул. Гражданская 53, офис 307</a></li>
             </ul>
-            <div className={st.adress_email}>
-                <span className={st.title}>Адрес</span>
-                <span className={st.adress}>Кыргызская Республика, г. Бишкек, ул. Гражданская 53, офис 307</span>
-                <span className={st.title}>Почта</span>
-                <span><a href="http://vk.com">onesta_group@mail.ru</a></span>
-            </div>
-            <div className={st.social}>
-                <img src={facebook} alt="img" />
-                <img src={twitter} alt="img" />
-                <span>Все права защищены 2017. Onesta Group</span>
-            </div>
+            <ul>
+                <h4>email</h4>
+                <li><a href="test">onesta_group@mail.ru</a></li>
+                <li><a href="test">onesta_group.job@mail.ru</a></li>
+            </ul>
+            <ul>
+                <h4>contact</h4>
+                <li><a href="test">+996 (550) 217 110</a></li>
+                <li><a href="test">+996 (550) 217 110</a></li>
+                <li><a href="test">+996 (550) 217 110</a></li>
+            </ul>
+            <ul className={st.social_media}>
+                <h4>social network</h4>
+                <li><a href="test">In</a></li>
+                <li><a href="test">Fb</a></li>
+                <li><a href="test">Tw</a></li>
+            </ul>
         </footer>
     )
 }

@@ -14,7 +14,7 @@ const Nav = () => {
                 nav.style.top = 0 + 'px';
             }
             if (scrolled > document.documentElement.clientHeight / 2 - 70) {
-                nav.style.background = 'rgba(0,0,0, 0.7)';
+                nav.style.background = 'rgba(209,210,212,1)';
             } else {
                 nav.style.background = 'none';
             }

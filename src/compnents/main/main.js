@@ -3,51 +3,47 @@ import NEWS_QUERY from '../queries/news/news';
 import Query from '../query/query';
 import st from './main.module.css';
 import about from './image/Logo-onesta-group-1024x828.jpg'
-import companyImg from './image/altri-prodotti-altri-coagulanti-genetico-uai-720x720.jpg';
-import companyImg1 from './image//altri-prodotti-lipasi-lipasi-di-capretto-uai-720x720.jpg';
+import other_project from './image/other_project.jpeg';
+import other_project1 from './image/other_project1.jpeg';
+import other_project2 from './image/other_project2.jpeg';
 import CATEGORY_QUERY from '../queries/category/category';
 
 const Main = () => {
     return (
         <div>
-            <div className={st.projects_section}>
+            <section className={st.projects_section}>
                 <h2>Другие компании</h2>
                 <div className={st.project_items}>
                     <a href="project" className={st.project_item}>
+                        <div className={st.img_container}>
+                            <img src={other_project} alt="img"></img>
+                        </div>
                         <div className={st.text_container}>
                             <h4>Name of company</h4>
-                        </div>
-                        <div className={st.img_container}>
-                            <img src={companyImg} alt="img"></img>
+                            <p>some text about other company</p>
                         </div>
                     </a>
                     <a href="project" className={st.project_item}>
+                        <div className={st.img_container}>
+                            <img src={other_project1} alt="img"></img>
+                        </div>
                         <div className={st.text_container}>
                             <h4>Name of company</h4>
-                        </div>
-                        <div className={st.img_container}>
-                            <img src={companyImg1} alt="img"></img>
+                            <p>some text about other company</p>
                         </div>
                     </a>
                     <a href="project" className={st.project_item}>
+                        <div className={st.img_container}>
+                            <img src={other_project2} alt="img"></img>
+                        </div>
                         <div className={st.text_container}>
                             <h4>Name of company</h4>
-                        </div>
-                        <div className={st.img_container}>
-                            <img src={companyImg} alt="img"></img>
-                        </div>
-                    </a>
-                    <a href="project" className={st.project_item}>
-                        <div className={st.text_container}>
-                            <h4>Name of company</h4>
-                        </div>
-                        <div className={st.img_container}>
-                            <div className={st.plus}>+</div>
+                            <p>some text about other company</p>
                         </div>
                     </a>
                 </div>
-            </div>
-            <div className={st.about_section}>
+            </section>
+            <section className={st.about_section}>
                 <h2>О нас</h2>
                 <div className={st.about_container}>
                     <div className={st.text_container}>
@@ -64,47 +60,51 @@ const Main = () => {
                         <img src={about} alt="img"></img>
                     </div>
                 </div>
-            </div>
+            </section>
             <section>
                 <h2>products</h2>
-                <div>
-                    <Query query={CATEGORY_QUERY} id={null}>
-                        {({ data: { categories } }) => {
-                            return (
-                                <ul className="glide__slides">
-                                    {categories && categories.map(elem => (
-                                        <li className="glide__slide" key={elem.id}>
-                                            <Link to={`/category/${elem.id}`} className='card'>
-                                                <h3>{elem.name}</h3>
+                <Query query={CATEGORY_QUERY} id={null}>
+                    {({ data: { categories } }) => {
+                        return (
+                            <div className={st.categories}>
+                                {categories && categories.map(elem => (
+                                    <div className={st.category} key={elem.id}>
+                                        <Link to={`/category/${elem.id}`} className='card'>
+                                            <div className={st.img_container}>
                                                 <img src={'http://localhost:1337' + elem.photo.url} alt="img"></img>
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
-                            )
-                        }}
-                    </Query>
-                </div>
-            </section>
-            <div><Query query={NEWS_QUERY} id={null}>
-                {({ data: { products } }) => {
-                    return (
-                        <div className={st.news_container}>
-                            <h2>News</h2>
-                            {products && products.map(elem => (
-                                <Link to={`/news/${elem.id}`} key={elem.id} className={st.news_item}>
-                                    <div className={st.img_container}><img src={'http://localhost:1337' + elem.img.url} alt="img"></img></div>
-                                    <div className={st.text_container}>
-                                        <h4>{elem.name}</h4>
-                                        <p>{elem.description}</p>
+                                            </div>
+                                            <div className={st.text_container}>
+                                                <h3>{elem.name}</h3>
+                                            </div>
+                                        </Link>
                                     </div>
-                                </Link>
-                            ))}
-                        </div>
-                    )
-                }}
-            </Query>
-            </div>
+                                ))}
+                            </div>
+                        )
+                    }}
+                </Query>
+            </section>
+            <section>
+                <h2>News</h2>
+                <Query query={NEWS_QUERY} id={null}>
+                    {({ data: { products } }) => {
+                        return (
+                            <div className={st.news_container}>
+                                {products && products.map(elem => (
+                                    <Link to={`/news/${elem.id}`} key={elem.id} className={st.news_item}>
+                                        <div className={st.img_container}><img src={'http://localhost:1337' + elem.img.url} alt="img"></img></div>
+                                        <div className={st.text_container}>
+                                            <span>{elem.data}</span>
+                                            <h4>{elem.name}</h4>
+                                            <p>{elem.info}</p>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
+                        )
+                    }}
+                </Query>
+            </section>
         </div>
     )
 }

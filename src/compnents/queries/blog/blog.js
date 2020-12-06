@@ -5,7 +5,7 @@ const BLOG_QUERY = gql`
         blogs {
             id
             name
-            description
+            info
             img{
                 url
             }
