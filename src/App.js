@@ -46,8 +46,8 @@ function App() {
             <Route path="/tehnolog" component={Tehnolog} />
             <Route path='/categories' component={Categories} />
           </Switch>
-          {/* <Form />
-          <Footer /> */}
+          <Form />
+          <Footer />
         </div>
       </ScrollToTop>
     </BrowserRouter>

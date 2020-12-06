@@ -2,7 +2,7 @@ import gql from 'graphql-tag';
 
 const NEWS_CARD_QUERIES = gql`
     query News($id: ID!) {
-        news(id: $id) {
+        product(id: $id) {
             id
             name
             description
