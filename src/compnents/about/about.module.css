@@ -1,3 +1,5 @@
+
+
 .about_main_block{
     width: 100%;
     height: 50vh;
@@ -52,6 +54,8 @@
 
 .services_card p {
     margin-top: 20px;
+    max-width: 80%;
+    margin-left: 10%;
 }
 
 .partners_container{
@@ -72,4 +76,52 @@
 .partner_card img{
     width: 100%;
     max-height: 150px;
+}
+
+
+.about_wrapper, .about_wrapper2{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 3vw;
+    margin-right: 3vw;
+    color: gray;
+}
+
+.about_wrapper p {
+    display: inline-block;
+}
+
+.about_wrapper p:nth-child(1){
+    color: var(--index);
+    font-weight: 600;
+}
+
+.line{
+    width: 90%;
+    border: 2px dotted gray;
+    margin-top: 30px;
+}
+
+.characters_header{
+    background-color: var(--index1);
+    display: flex;
+    color: #fff;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px 0 5px 12px;
+}
+
+.characters_header img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.about_characters{
+    margin-top: 30px;
+}
+
+.about_characters p{
+    margin-top: 30px;
 }
